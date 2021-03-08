@@ -84,7 +84,7 @@ def batch_paramatric_GLM(nii_root_dir, sub_num_list, total_session_num, all_sub_
     NiiSelector.inputs.root_dir = nii_root_dir
     NiiSelector.iterables = ("sub_num", sub_num_list)
     NiiSelector.inputs.session_num = total_session_num
-    NiiSelector.inputs.data_type = "Smooth_8mm" 
+    NiiSelector.inputs.data_type = "Smooth_8mm"
     NiiSelector.inputs.all_sub_dataframe = all_sub_dataframe
 
     glm_input.inputs.params_name = params_name
